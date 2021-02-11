@@ -1,19 +1,27 @@
 {
   "name": "easyfin",
   "version": "1.0.0",
-  "description": "Trabalho do Daniel e do Arthur",
+  "description": "Trabalho da faculdade",
   "main": "index.js",
   "scripts": {
     "start": "nodemon Js/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannbecker/easyfin.git"
+  },
+  "author": "Daniel e Arthur",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannbecker/easyfin/issues"
+  },
+  "homepage": "https://github.com/dannbecker/easyfin#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7"
   }
 }

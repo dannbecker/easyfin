@@ -1,7 +1,7 @@
-const customExpress = require('C:/Users/Ale/Desktop/easyfin/Js/customExpress.js')
+const customExpress = require('C:/Users/Ale/Documents/GitHub/easyfin/Js/customExpress.js')
 const app = customExpress()
-const conexao = require('C:/Users/Ale/Desktop/easyfin/Js/conexao')
-const TabelaAlunos = require('C:/Users/Ale/Desktop/easyfin/Js/TabelaAlunos.js');
+const conexao = require('C:/Users/Ale/Documents/GitHub/easyfin/Js/conexao')
+const TabelaAlunos = require('C:/Users/Ale/Documents/GitHub/easyfin/Js/TabelaAlunos.js');
 
 conexao.connect((erro, acerto) => {
 
