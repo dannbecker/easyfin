@@ -1,0 +1,41 @@
+
+.areaLogin {
+
+  height:1.2em;
+  padding: 15px 20px 15px 20px ;
+  text-align: right;
+  vertical-align: middle;
+  background-color: #5cbc5ead;
+
+}
+.botaoLogin, .botaocontato {
+
+  margin: 0 0 0 15px;
+  width: 150px;
+  height: 80%;
+  border-radius: 8px;
+  border-color: #111111;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+.botaoLogin:hover , .botaocontato:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.logoColegio {
+  width: 200px;
+  width: 100px;
+  float: left;
+  margin-left: 35px;
+
+}
+.corpo {
+  background: linear-gradient(#cccccc 10% ,#fefefe 90%, #cccccc);
+  width: auto;
+
+  text-align: center;
+}
+.mainBody{
+  height: 479px;
+}
