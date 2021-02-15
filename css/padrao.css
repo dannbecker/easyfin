@@ -7,6 +7,12 @@
 
 html, body {height:100%;}
 
+.tituloPrincipal {
+    background-color: #47e247;
+    font-size: 28px;
+    
+}
+
 .geral {
     min-height:100%;
     position:relative;
@@ -56,5 +62,5 @@ font-family: 'Noto Sans JP', sans-serif;
 
 .rodape {
   background-color: #1e621e;
-  height: 50px;
+  height: 35px;
 }

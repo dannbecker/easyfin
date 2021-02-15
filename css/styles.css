@@ -4,7 +4,8 @@
     padding: 15px 20px 15px 20px ;
     text-align: right;
     vertical-align: middle;
-    background-color: #5cbc5ead;
+    background: linear-gradient(#66000000 1px, #5cbc5ead 10px);
+    /* background-color: #5cbc5ead; */
 
 }
 .botaoLogin, .botaocontato {
@@ -40,22 +41,7 @@
     height: 479px;
 }
 
-@media only screen and (max-width: 523px) {
-    
-    .botaoLogin, .botaocontato {
-    margin: 0 0 0 20px;
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-    border-color: #111111;
-    font-size: 14px;
-    font-family: 'Noto Sans JP', sans-serif;
-    transition: 1s;
-  
 
-    
-}
-    
 @media only screen and (max-width: 423px) {
     
     .botaoLogin, .botaocontato {
