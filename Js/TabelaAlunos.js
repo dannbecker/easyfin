@@ -52,5 +52,27 @@ class TabelaAlunos{
 
 
     }
+
+    BuscaAluno(id ,res) {
+
+        const sql = ` SELECT * FROM easyFin_db.alunos WHERE id = ${id} `;    
+        
+        conexao.query(sql , (erro,acerto) =>{
+
+            if(erro){
+                console.log(erro)
+            } else {
+                console.log(res.json(acerto));
+            }
+
+
+        })
+
+
+
+
+    }
+
+
 }
 module.exports = new TabelaAlunos;
