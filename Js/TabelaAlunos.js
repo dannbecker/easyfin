@@ -1,3 +1,5 @@
+const conexao = require('../Js/conexao');
+const data = require('moment');
 
 class TabelaAlunos{
 
@@ -29,8 +31,24 @@ class TabelaAlunos{
     }
     adicionarAlunos(aluno){
 
-        const sql = ``
+    
+        const sql = `INSERT INTO easyFin_db.alunos SET ?  `
 
+        let novoAluno =  aluno;
+
+        const dataNascimento = data(aluno.dataNascimento,'DD/MM/YYYY').format('YYYY/MM/DD');
+        const alunoFinal = {...novoAluno,dataNascimento};
+        
+
+        conexao.query(sql, alunoFinal, (erro, acerto) =>{
+            
+            if(erro){
+                console.log(erro)
+            }else {
+                console.log(acerto)
+            }
+
+        })
 
 
     }
