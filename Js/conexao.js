@@ -1,5 +1,4 @@
 
-
 const sql = require('mysql2');
 
 const conexao = sql.createConnection({

@@ -1,0 +1,15 @@
+{
+    "mysql" :{
+        "dataBase": "easyfin_db",
+        "usuario": "root",
+        "senha": "Bc200764$",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "api" :{
+        "port": 3000
+
+    }
+
+
+}

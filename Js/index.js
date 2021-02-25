@@ -1,5 +1,6 @@
 const customExpress = require('../Js/customExpress.js')
 const app = customExpress()
+
 const conexao = require('../Js/conexao')
 const TabelaAlunos = require('../Js/TabelaAlunos.js');
 
