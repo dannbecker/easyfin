@@ -34,6 +34,23 @@ class Aluno {
         return encontrado
 
     }
+    async atualiza(){
+        
+        const campos = ["nome", "email" ]
+        const dadosAtualizados = {}
+        
+        campos.forEach((campo)=>{
+            const valor = this[campo]
+
+            if(typeof valor === "string" && valor.length > 0){
+                dadosAtualizados[campo] = valor
+            } 
+        })
+        await tabela22.atualiza(this.id, dadosAtualizados)
+    }
+    remove(){
+        return tabela22.delete(this.id)
+    } 
 
 
 

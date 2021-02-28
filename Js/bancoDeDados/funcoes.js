@@ -1,4 +1,5 @@
 
+
 const modelo = require('C:/Users/Ale/Documents/GitHub/easyfin/models/modeloTabelaAlunos.js')
 
 
@@ -21,6 +22,21 @@ module.exports = {
             }
         })
         
+
+    },
+    atualiza(id, dadosAtualizados){
+        return modelo.update(dadosAtualizados,{
+            where:{
+                id:id
+            }
+        })
+    },
+    delete(id){
+        return modelo.destroy({
+            where:{
+                id:id
+            }
+        })
 
     }
 
