@@ -51,7 +51,23 @@ class Aluno {
     remove(){
         return tabela22.delete(this.id)
     } 
+    async buscaPorEmail(){
+        
+        const encontrado = await tabela22.CarregaPorEmail(this.email)
+         
+        if(!encontrado){
+            throw new Error("deu erro")
+        }
 
+        this.id = encontrado.id;
+        this.nome = encontrado.nome;
+        this.cpf = encontrado.cpf;
+        this.senha = encontrado.senha;
+        
+
+        return encontrado 
+
+    }
 
 
 }

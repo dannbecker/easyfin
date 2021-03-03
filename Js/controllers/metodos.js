@@ -8,7 +8,16 @@ const Aluno = require('../../models/Aluno')
 
 module.exports = app => {
 
+    app.get('/', (req, res)=>{
+
+        res.sendFile("C:/Users/Ale/Documents/GitHub/easyfin/view/index.html")
+
+
+    })
+
     app.get('/listarAlunos' , async (req, res)=>{
+
+        res.send()
 
     const resultado = await Tabela22.listar()
 

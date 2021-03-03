@@ -38,6 +38,15 @@ module.exports = {
             }
         })
 
+    },
+    async carregaPorEmail(email){
+
+        return modelo.findOne({
+            where:{
+                email : email
+            }   
+        })
+
     }
 
 

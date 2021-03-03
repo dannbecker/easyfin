@@ -4,6 +4,9 @@ const app = customExpress()
 const conexao = require('../Js/conexao')
 const TabelaAlunos = require('../Js/TabelaAlunos.js');
 
+//const server = require('http')
+
+
 conexao.connect((erro, acerto) => {
 
     if(erro){
