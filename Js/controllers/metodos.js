@@ -14,6 +14,13 @@ module.exports = app => {
 
 
     })
+    app.get('/log-in' , (req,res)=>{
+        res.sendFile("C:/Users/Ale/Documents/GitHub/easyfin/view/log-in.html")
+    })
+    app.get('/dashboard',  (req,res)=>{
+        res.sendFile('C:/Users/Ale/Documents/GitHub/easyfin/view/dashboard.html')
+        
+    }) 
 
     app.get('/listarAlunos' , async (req, res)=>{
 
