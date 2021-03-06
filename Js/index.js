@@ -1,23 +1,24 @@
 const customExpress = require('../Js/customExpress.js')
 const app = customExpress()
 
-const conexao = require('../Js/conexao')
-const TabelaAlunos = require('../Js/TabelaAlunos.js');
+
+//const conexao = require('../Js/conexao')
+//const TabelaAlunos = require('../Js/TabelaAlunos.js');
 
 //const server = require('http')
 
 
-conexao.connect((erro, acerto) => {
+// conexao.connect((erro, acerto) => {
 
-    if(erro){
-        console.log("resultado : " + erro);
-    } else {
+//     if(erro){
+//         console.log("resultado : " + erro);
+//     } else {
         
-        TabelaAlunos.init(conexao)
-        console.log("conectei com a dataBase ")
+//         TabelaAlunos.init(conexao)
+//         console.log("conectei com a dataBase ")
         
-    }
-})
+//     }
+// })
 
 
 

@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="css\cssLogin.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-      <script src="C:\Users\Ale\Documents\GitHub\easyfin\Js\fazerLogin\login.js"></script>
+      
 
 </head>
   <body class="corpo">
@@ -20,17 +20,17 @@
           </nav>
     </header>
   <main class="mainBody">
-    <div class="areaDoLogin">
+    <form class="areaDoLogin" method="POST" action="http://localhost:3000/log-in" >
       <label class="charEmail" for="emailUsuario" > Email </label>
       <input type="text" class="emailUsuario"  required placeholder="exemplo@hotmail.com">
 
       <label class="charSenha" for="senha"> Senha </label>
       <input type="password" class="senha" required placeholder="Senha">
 
-      <button  class="botaoSubmit" onclick="validaUsuario()"></button>
+      <button  class="botaoSubmit" ></button>
 
 
-    </div>
+    </form>
 
 
   </main>
@@ -39,7 +39,7 @@
 
   </footer>
 
-  
+  <script src="../Js/validaUsuario.js" ></script>
 
 
   </body>

@@ -11,15 +11,21 @@ module.exports = app => {
     app.get('/', (req, res)=>{
 
         res.sendFile("C:/Users/Ale/Documents/GitHub/easyfin/view/index.html")
+        console.log("Usando o sequelize e os metodos")
 
 
     })
     app.get('/log-in' , (req,res)=>{
         res.sendFile("C:/Users/Ale/Documents/GitHub/easyfin/view/log-in.html")
     })
-    app.get('/dashboard',  (req,res)=>{
-        res.sendFile('C:/Users/Ale/Documents/GitHub/easyfin/view/dashboard.html')
+    app.post('/log-in', (req,res) => {
         
+    } )
+    app.get('/dashboard', async (req,res)=>{
+        res.sendFile('C:/Users/Ale/Documents/GitHub/easyfin/view/dashboard.html')
+        const resultado = await Tabela22.listar()
+
+        console.log(JSON.stringify(resultado))
     }) 
 
     app.get('/listarAlunos' , async (req, res)=>{

@@ -1,5 +1,3 @@
-
-
 const modelo = require('C:/Users/Ale/Documents/GitHub/easyfin/models/modeloTabelaAlunos.js')
 
 
@@ -15,7 +13,7 @@ module.exports = {
         return modelo.create(aluno)
 
     },
-    async buscaPorId(id){
+    buscaPorId(id){
         return modelo.findOne({
             where:{
                 id:id
@@ -39,7 +37,7 @@ module.exports = {
         })
 
     },
-    async carregaPorEmail(email){
+    carregaPorEmail(email){
 
         return modelo.findOne({
             where:{
